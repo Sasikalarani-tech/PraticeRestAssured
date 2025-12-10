@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.OpenNewAccountTest">
+        <methods>
+          <include name="openNewAccount_Access"/>
+          <include name="close"/>
+          <include name="accountOverview"/>
+          <include name="setUp_driver"/>
+          <include name="openNewAccount_Click"/>
+        </methods>
+      </class> <!-- test.OpenNewAccountTest -->
+      <class name="test.CustomerLoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="loginSetup"/>
+          <include name="setUp_driver"/>
+          <include name="login_Click"/>
+        </methods>
+      </class> <!-- test.CustomerLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
