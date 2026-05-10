@@ -1,0 +1,1 @@
+{"uuid":"e12d722d-54ee-4f93-ba9c-84bbd300e506","name":"testWithAuthentication.RegsiterUser","children":["9b8c7396-5f2c-4428-a208-f530851eb03a"],"befores":[{"name":"base_SetUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1778327262222,"stop":1778327262222}],"afters":[],"start":1778327255504,"stop":1778327267247}

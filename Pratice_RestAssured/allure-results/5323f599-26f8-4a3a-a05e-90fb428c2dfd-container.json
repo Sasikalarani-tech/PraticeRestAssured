@@ -1,0 +1,1 @@
+{"uuid":"5323f599-26f8-4a3a-a05e-90fb428c2dfd","name":"testWithAuthentication.GetCollectionObjects","children":["2859ed83-bcc6-4b9e-a860-12a95d95b782"],"befores":[{"name":"base_SetUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1778325637263,"stop":1778325637264}],"afters":[],"start":1778325623157,"stop":1778325638616}

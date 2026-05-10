@@ -1,32 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-09T12:45:53 IST" name="Default suite" finished-at="2026-05-09T12:45:58 IST" duration-ms="5608">
+  <suite started-at="2026-05-09T17:17:35 IST" name="Default suite" finished-at="2026-05-09T17:17:47 IST" duration-ms="11719">
     <groups>
+      <group name="CreateObj">
+        <method signature="CreateObjectWithCollection.createObject_Collection()[pri:0, instance:testWithAuthentication.CreateObjectWithCollection@311bf055]" name="createObject_Collection" class="testWithAuthentication.CreateObjectWithCollection"/>
+      </group> <!-- CreateObj -->
+      <group name="UpdateObj">
+        <method signature="UpdateObjectWithCollection.updateObject_Collection()[pri:0, instance:testWithAuthentication.UpdateObjectWithCollection@21be3395]" name="updateObject_Collection" class="testWithAuthentication.UpdateObjectWithCollection"/>
+      </group> <!-- UpdateObj -->
     </groups>
-    <test started-at="2026-05-09T12:45:53 IST" name="Default test" finished-at="2026-05-09T12:45:58 IST" duration-ms="5608">
-      <class name="tests.CreateObjectMultiple">
-        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:tests.CreateObjectMultiple@14cd1699]" started-at="2026-05-09T12:45:53 IST" name="base_SetUp" finished-at="2026-05-09T12:45:54 IST" duration-ms="786" status="PASS">
+    <test started-at="2026-05-09T17:17:35 IST" name="Default test" finished-at="2026-05-09T17:17:47 IST" duration-ms="11719">
+      <class name="tests.DeleteObject">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:tests.DeleteObject@6d5620ce]" started-at="2026-05-09T17:17:43 IST" name="base_SetUp" finished-at="2026-05-09T17:17:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- base_SetUp -->
-        <test-method signature="createObject(requestData.CreateRequest)[pri:0, instance:tests.CreateObjectMultiple@14cd1699]" started-at="2026-05-09T12:45:54 IST" name="createObject" data-provider="TestData" finished-at="2026-05-09T12:45:58 IST" duration-ms="4726" status="PASS">
+        <test-method signature="deleteObject()[pri:0, instance:tests.DeleteObject@6d5620ce]" started-at="2026-05-09T17:17:43 IST" name="deleteObject" finished-at="2026-05-09T17:17:44 IST" depends-on-methods="tests.CreateObject.createObject" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteObject -->
+      </class> <!-- tests.DeleteObject -->
+      <class name="tests.CreateObject">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:tests.CreateObject@642a7222]" started-at="2026-05-09T17:17:43 IST" name="base_SetUp" finished-at="2026-05-09T17:17:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="createObject()[pri:0, instance:tests.CreateObject@642a7222]" started-at="2026-05-09T17:17:43 IST" name="createObject" finished-at="2026-05-09T17:17:43 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="createObject_WithoutName()[pri:0, instance:tests.CreateObject@642a7222]" started-at="2026-05-09T17:17:44 IST" name="createObject_WithoutName" finished-at="2026-05-09T17:17:44 IST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject_WithoutName -->
+      </class> <!-- tests.CreateObject -->
+      <class name="testWithAuthentication.CreateObjectWithCollection">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:testWithAuthentication.CreateObjectWithCollection@311bf055]" started-at="2026-05-09T17:17:42 IST" name="base_SetUp" finished-at="2026-05-09T17:17:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="createObject_Collection()[pri:0, instance:testWithAuthentication.CreateObjectWithCollection@311bf055]" started-at="2026-05-09T17:17:42 IST" name="createObject_Collection" finished-at="2026-05-09T17:17:43 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject_Collection -->
+      </class> <!-- testWithAuthentication.CreateObjectWithCollection -->
+      <class name="tests.GetObjects">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:tests.GetObjects@49b2a47d]" started-at="2026-05-09T17:17:41 IST" name="base_SetUp" finished-at="2026-05-09T17:17:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="getObjects()[pri:0, instance:tests.GetObjects@49b2a47d]" started-at="2026-05-09T17:17:41 IST" name="getObjects" finished-at="2026-05-09T17:17:42 IST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getObjects -->
+      </class> <!-- tests.GetObjects -->
+      <class name="tests.CreateObjectMultiple">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:tests.CreateObjectMultiple@13d73f29]" started-at="2026-05-09T17:17:35 IST" name="base_SetUp" finished-at="2026-05-09T17:17:36 IST" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="createObject(requestData.CreateRequest)[pri:0, instance:tests.CreateObjectMultiple@13d73f29]" started-at="2026-05-09T17:17:36 IST" name="createObject" data-provider="TestData" finished-at="2026-05-09T17:17:41 IST" duration-ms="4951" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[requestData.CreateRequest@3ea27e80]]>
+                <![CDATA[requestData.CreateRequest@46472f68]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="createObject(requestData.CreateRequest)[pri:0, instance:tests.CreateObjectMultiple@14cd1699]" started-at="2026-05-09T12:45:54 IST" name="createObject" data-provider="TestData" finished-at="2026-05-09T12:45:58 IST" duration-ms="4721" status="PASS">
+        <test-method signature="createObject(requestData.CreateRequest)[pri:0, instance:tests.CreateObjectMultiple@13d73f29]" started-at="2026-05-09T17:17:36 IST" name="createObject" data-provider="TestData" finished-at="2026-05-09T17:17:41 IST" duration-ms="4951" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[requestData.CreateRequest@7614de98]]>
+                <![CDATA[requestData.CreateRequest@4cff45e4]]>
               </value>
             </param>
           </params>
@@ -34,6 +84,118 @@
           </reporter-output>
         </test-method> <!-- createObject -->
       </class> <!-- tests.CreateObjectMultiple -->
+      <class name="testWithAuthentication.UpdateObjectWithCollection">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:testWithAuthentication.UpdateObjectWithCollection@21be3395]" started-at="2026-05-09T17:17:44 IST" name="base_SetUp" finished-at="2026-05-09T17:17:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="updateObject_Collection()[pri:0, instance:testWithAuthentication.UpdateObjectWithCollection@21be3395]" started-at="2026-05-09T17:17:44 IST" name="updateObject_Collection" depends-on-groups="CreateObj" finished-at="2026-05-09T17:17:45 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateObject_Collection -->
+      </class> <!-- testWithAuthentication.UpdateObjectWithCollection -->
+      <class name="testWithAuthentication.RegsiterUser">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:testWithAuthentication.RegsiterUser@5be1d0a4]" started-at="2026-05-09T17:17:42 IST" name="base_SetUp" finished-at="2026-05-09T17:17:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="regsiterUser()[pri:0, instance:testWithAuthentication.RegsiterUser@5be1d0a4]" started-at="2026-05-09T17:17:42 IST" name="regsiterUser" finished-at="2026-05-09T17:17:42 IST" duration-ms="444" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <409>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <409>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$3.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at testWithAuthentication.RegsiterUser.regsiterUser(RegsiterUser.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regsiterUser -->
+      </class> <!-- testWithAuthentication.RegsiterUser -->
+      <class name="testWithAuthentication.GetCollections">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:testWithAuthentication.GetCollections@4f49f6af]" started-at="2026-05-09T17:17:45 IST" name="base_SetUp" finished-at="2026-05-09T17:17:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="getCollections()[pri:0, instance:testWithAuthentication.GetCollections@4f49f6af]" started-at="2026-05-09T17:17:45 IST" name="getCollections" finished-at="2026-05-09T17:17:45 IST" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollections -->
+      </class> <!-- testWithAuthentication.GetCollections -->
+      <class name="testWithAuthentication.DeleteObjectWithCollection">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:testWithAuthentication.DeleteObjectWithCollection@415b0b49]" started-at="2026-05-09T17:17:45 IST" name="base_SetUp" finished-at="2026-05-09T17:17:45 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="deleteObject_Collection()[pri:0, instance:testWithAuthentication.DeleteObjectWithCollection@415b0b49]" started-at="2026-05-09T17:17:45 IST" name="deleteObject_Collection" depends-on-groups="UpdateObj" finished-at="2026-05-09T17:17:45 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteObject_Collection -->
+      </class> <!-- testWithAuthentication.DeleteObjectWithCollection -->
+      <class name="testWithAuthentication.GetCollectionObjects">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:testWithAuthentication.GetCollectionObjects@78452606]" started-at="2026-05-09T17:17:45 IST" name="base_SetUp" finished-at="2026-05-09T17:17:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="getObjects()[pri:0, instance:testWithAuthentication.GetCollectionObjects@78452606]" started-at="2026-05-09T17:17:45 IST" name="getObjects" finished-at="2026-05-09T17:17:46 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getObjects -->
+      </class> <!-- testWithAuthentication.GetCollectionObjects -->
+      <class name="tests.GetObjectsById">
+        <test-method is-config="true" signature="base_SetUp()[pri:0, instance:tests.GetObjectsById@147e2ae7]" started-at="2026-05-09T17:17:46 IST" name="base_SetUp" finished-at="2026-05-09T17:17:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- base_SetUp -->
+        <test-method signature="getObjectsById()[pri:0, instance:tests.GetObjectsById@147e2ae7]" started-at="2026-05-09T17:17:46 IST" name="getObjectsById" finished-at="2026-05-09T17:17:47 IST" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getObjectsById -->
+      </class> <!-- tests.GetObjectsById -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
