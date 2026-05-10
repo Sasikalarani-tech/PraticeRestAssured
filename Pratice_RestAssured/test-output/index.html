@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sasir\AppData\Local\Temp\testng-eclipse-667816457\testng-customsuite.xml</span>
+                    <span>C:\Users\sasir\AppData\Local\Temp\testng-eclipse-1966078633\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWithAuthentication.RegsiterUser" class="method navigator-link" hash-for-method="regsiterUser">regsiterUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +117,62 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateObjectMultiple" class="method navigator-link" hash-for-method="createObject(requestData.CreateRequest@7614de98)">createObject(requestData.CreateRequest@7614de98)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateObject" class="method navigator-link" hash-for-method="createObject">createObject</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateObjectMultiple" class="method navigator-link" hash-for-method="createObject(requestData.CreateRequest@3ea27e80)">createObject(requestData.CreateRequest@3ea27e80)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateObjectMultiple" class="method navigator-link" hash-for-method="createObject(requestData.CreateRequest@46472f68)">createObject(requestData.CreateRequest@46472f68)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateObjectMultiple" class="method navigator-link" hash-for-method="createObject(requestData.CreateRequest@4cff45e4)">createObject(requestData.CreateRequest@4cff45e4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWithAuthentication.CreateObjectWithCollection" class="method navigator-link" hash-for-method="createObject_Collection">createObject_Collection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateObject" class="method navigator-link" hash-for-method="createObject_WithoutName">createObject_WithoutName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.DeleteObject" class="method navigator-link" hash-for-method="deleteObject">deleteObject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWithAuthentication.DeleteObjectWithCollection" class="method navigator-link" hash-for-method="deleteObject_Collection">deleteObject_Collection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWithAuthentication.GetCollections" class="method navigator-link" hash-for-method="getCollections">getCollections</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.GetObjects" class="method navigator-link" hash-for-method="getObjects">getObjects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWithAuthentication.GetCollectionObjects" class="method navigator-link" hash-for-method="getObjects">getObjects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.GetObjectsById" class="method navigator-link" hash-for-method="getObjectsById">getObjectsById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWithAuthentication.UpdateObjectWithCollection" class="method navigator-link" hash-for-method="updateObject_Collection">updateObject_Collection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -123,6 +187,132 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testWithAuthentication.RegsiterUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="regsiterUser">
+                  </a> <!-- regsiterUser -->
+                  <span class="method-name">regsiterUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;409&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at testWithAuthentication.RegsiterUser.regsiterUser(RegsiterUser.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testWithAuthentication.DeleteObjectWithCollection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteObject_Collection">
+                  </a> <!-- deleteObject_Collection -->
+                  <span class="method-name">deleteObject_Collection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testWithAuthentication.GetCollectionObjects</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getObjects">
+                  </a> <!-- getObjects -->
+                  <span class="method-name">getObjects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testWithAuthentication.UpdateObjectWithCollection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateObject_Collection">
+                  </a> <!-- updateObject_Collection -->
+                  <span class="method-name">updateObject_Collection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CreateObject</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createObject">
+                  </a> <!-- createObject -->
+                  <span class="method-name">createObject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createObject_WithoutName">
+                  </a> <!-- createObject_WithoutName -->
+                  <span class="method-name">createObject_WithoutName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,18 +321,93 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createObject(requestData.CreateRequest@7614de98)">
-                  </a> <!-- createObject(requestData.CreateRequest@7614de98) -->
+                  <a name="createObject(requestData.CreateRequest@46472f68)">
+                  </a> <!-- createObject(requestData.CreateRequest@46472f68) -->
                   <span class="method-name">createObject</span>
-                  <span class="parameters">(requestData.CreateRequest@7614de98)</span>
+                  <span class="parameters">(requestData.CreateRequest@46472f68)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="createObject(requestData.CreateRequest@3ea27e80)">
-                  </a> <!-- createObject(requestData.CreateRequest@3ea27e80) -->
+                  <a name="createObject(requestData.CreateRequest@4cff45e4)">
+                  </a> <!-- createObject(requestData.CreateRequest@4cff45e4) -->
                   <span class="method-name">createObject</span>
-                  <span class="parameters">(requestData.CreateRequest@3ea27e80)</span>
+                  <span class="parameters">(requestData.CreateRequest@4cff45e4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testWithAuthentication.GetCollections</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollections">
+                  </a> <!-- getCollections -->
+                  <span class="method-name">getCollections</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.GetObjectsById</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getObjectsById">
+                  </a> <!-- getObjectsById -->
+                  <span class="method-name">getObjectsById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testWithAuthentication.CreateObjectWithCollection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createObject_Collection">
+                  </a> <!-- createObject_Collection -->
+                  <span class="method-name">createObject_Collection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DeleteObject</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteObject">
+                  </a> <!-- deleteObject -->
+                  <span class="method-name">deleteObject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.GetObjects</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getObjects">
+                  </a> <!-- getObjects -->
+                  <span class="method-name">getObjects</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,7 +415,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sasir\AppData\Local\Temp\testng-eclipse-667816457\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sasir\AppData\Local\Temp\testng-eclipse-1966078633\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,7 +424,27 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;reqRespBuilder.RequestSpecFactory&quot;/&gt;
+      &lt;class name=&quot;utils.ThreadLocalContext&quot;/&gt;
+      &lt;class name=&quot;requestData.UpdateRequest&quot;/&gt;
       &lt;class name=&quot;tests.CreateObjectMultiple&quot;/&gt;
+      &lt;class name=&quot;tests.GetObjects&quot;/&gt;
+      &lt;class name=&quot;testWithAuthentication.RegsiterUser&quot;/&gt;
+      &lt;class name=&quot;testWithAuthentication.DeleteObjectWithCollection&quot;/&gt;
+      &lt;class name=&quot;reqRespBuilder.ResponseSpecFactory&quot;/&gt;
+      &lt;class name=&quot;tests.DeleteObject&quot;/&gt;
+      &lt;class name=&quot;requestData.DataUpdate&quot;/&gt;
+      &lt;class name=&quot;requestData.CreateRequest&quot;/&gt;
+      &lt;class name=&quot;requestData.Data&quot;/&gt;
+      &lt;class name=&quot;testWithAuthentication.CreateObjectWithCollection&quot;/&gt;
+      &lt;class name=&quot;tests.CreateObject&quot;/&gt;
+      &lt;class name=&quot;base.BaseTest&quot;/&gt;
+      &lt;class name=&quot;config.ConfigReader&quot;/&gt;
+      &lt;class name=&quot;testWithAuthentication.UpdateObjectWithCollection&quot;/&gt;
+      &lt;class name=&quot;requestData.ResgisterData&quot;/&gt;
+      &lt;class name=&quot;testWithAuthentication.GetCollections&quot;/&gt;
+      &lt;class name=&quot;testWithAuthentication.GetCollectionObjects&quot;/&gt;
+      &lt;class name=&quot;tests.GetObjectsById&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -173,7 +458,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Default test (21 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,6 +468,22 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">CreateObj</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createObject_Collection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">UpdateObj</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateObject_Collection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -199,20 +500,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createObject')
 data.setCell(0, 2, 'tests.CreateObjectMultiple')
-data.setCell(0, 3, 4726);
+data.setCell(0, 3, 4951);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createObject')
 data.setCell(1, 2, 'tests.CreateObjectMultiple')
-data.setCell(1, 3, 4721);
+data.setCell(1, 3, 4951);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getObjectsById')
+data.setCell(2, 2, 'tests.GetObjectsById')
+data.setCell(2, 3, 924);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getObjects')
+data.setCell(3, 2, 'tests.GetObjects')
+data.setCell(3, 3, 707);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deleteObject')
+data.setCell(4, 2, 'tests.DeleteObject')
+data.setCell(4, 3, 514);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createObject')
+data.setCell(5, 2, 'tests.CreateObject')
+data.setCell(5, 3, 448);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'regsiterUser')
+data.setCell(6, 2, 'testWithAuthentication.RegsiterUser')
+data.setCell(6, 3, 444);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createObject_Collection')
+data.setCell(7, 2, 'testWithAuthentication.CreateObjectWithCollection')
+data.setCell(7, 3, 443);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createObject_WithoutName')
+data.setCell(8, 2, 'tests.CreateObject')
+data.setCell(8, 3, 442);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getCollections')
+data.setCell(9, 2, 'testWithAuthentication.GetCollections')
+data.setCell(9, 3, 441);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'updateObject_Collection')
+data.setCell(10, 2, 'testWithAuthentication.UpdateObjectWithCollection')
+data.setCell(10, 3, 431);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'deleteObject_Collection')
+data.setCell(11, 2, 'testWithAuthentication.DeleteObjectWithCollection')
+data.setCell(11, 3, 428);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getObjects')
+data.setCell(12, 2, 'testWithAuthentication.GetCollectionObjects')
+data.setCell(12, 3, 344);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -244,12 +589,131 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">createObject(requestData.CreateRequest@3ea27e80)</span>
-                <span class="method-start">827 ms</span>
+                <span class="method-name">createObject(requestData.CreateRequest@46472f68)</span>
+                <span class="method-start">872 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">createObject(requestData.CreateRequest@7614de98)</span>
-                <span class="method-start">832 ms</span>
+                <span class="method-name">createObject(requestData.CreateRequest@4cff45e4)</span>
+                <span class="method-start">872 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GetObjects</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">5951 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getObjects</span>
+                <span class="method-start">5953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testWithAuthentication.RegsiterUser</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">6672 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">regsiterUser</span>
+                <span class="method-start">6677 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testWithAuthentication.CreateObjectWithCollection</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">7133 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createObject_Collection</span>
+                <span class="method-start">7136 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateObject</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">7593 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createObject</span>
+                <span class="method-start">7596 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DeleteObject</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">8050 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">deleteObject</span>
+                <span class="method-start">8056 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateObject</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createObject_WithoutName</span>
+                <span class="method-start">8580 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testWithAuthentication.UpdateObjectWithCollection</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">9029 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">updateObject_Collection</span>
+                <span class="method-start">9034 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testWithAuthentication.DeleteObjectWithCollection</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">9469 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">deleteObject_Collection</span>
+                <span class="method-start">9478 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testWithAuthentication.GetCollections</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">9913 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getCollections</span>
+                <span class="method-start">9915 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testWithAuthentication.GetCollectionObjects</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">10362 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getObjects</span>
+                <span class="method-start">10364 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GetObjectsById</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">base_SetUp</span>
+                <span class="method-start">10721 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getObjectsById</span>
+                <span class="method-start">10724 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

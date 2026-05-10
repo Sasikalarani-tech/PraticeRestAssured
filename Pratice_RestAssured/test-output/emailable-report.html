@@ -9,11 +9,64 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,608</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,719</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.CreateObjectMultiple</td><td><a href="#m0">createObject</a></td><td rowspan="2">1778310954109</td><td rowspan="2">4721</td></tr><tr class="passedeven"><td><a href="#m1">createObject</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testWithAuthentication.RegsiterUser</td><td><a href="#m0">regsiterUser</a></td><td rowspan="1">1778327262226</td><td rowspan="1">444</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testWithAuthentication.CreateObjectWithCollection</td><td><a href="#m1">createObject_Collection</a></td><td rowspan="1">1778327262685</td><td rowspan="1">443</td></tr><tr class="passedodd"><td rowspan="1">testWithAuthentication.DeleteObjectWithCollection</td><td><a href="#m2">deleteObject_Collection</a></td><td rowspan="1">1778327265027</td><td rowspan="1">428</td></tr><tr class="passedeven"><td rowspan="1">testWithAuthentication.GetCollectionObjects</td><td><a href="#m3">getObjects</a></td><td rowspan="1">1778327265913</td><td rowspan="1">344</td></tr><tr class="passedodd"><td rowspan="1">testWithAuthentication.GetCollections</td><td><a href="#m4">getCollections</a></td><td rowspan="1">1778327265464</td><td rowspan="1">441</td></tr><tr class="passedeven"><td rowspan="1">testWithAuthentication.UpdateObjectWithCollection</td><td><a href="#m5">updateObject_Collection</a></td><td rowspan="1">1778327264583</td><td rowspan="1">431</td></tr><tr class="passedodd"><td rowspan="2">tests.CreateObject</td><td><a href="#m6">createObject</a></td><td rowspan="1">1778327263145</td><td rowspan="1">448</td></tr><tr class="passedodd"><td><a href="#m7">createObject_WithoutName</a></td><td rowspan="1">1778327264129</td><td rowspan="1">442</td></tr><tr class="passedeven"><td rowspan="2">tests.CreateObjectMultiple</td><td><a href="#m8">createObject</a></td><td rowspan="2">1778327256421</td><td rowspan="2">4951</td></tr><tr class="passedeven"><td><a href="#m9">createObject</a></td></tr><tr class="passedodd"><td rowspan="1">tests.DeleteObject</td><td><a href="#m10">deleteObject</a></td><td rowspan="1">1778327263605</td><td rowspan="1">514</td></tr><tr class="passedeven"><td rowspan="1">tests.GetObjects</td><td><a href="#m11">getObjects</a></td><td rowspan="1">1778327261502</td><td rowspan="1">707</td></tr><tr class="passedodd"><td rowspan="1">tests.GetObjectsById</td><td><a href="#m12">getObjectsById</a></td><td rowspan="1">1778327266273</td><td rowspan="1">924</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.CreateObjectMultiple#createObject</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>requestData.CreateRequest@7614de98</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.CreateObjectMultiple#createObject</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>requestData.CreateRequest@3ea27e80</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testWithAuthentication.RegsiterUser#regsiterUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;409&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at testWithAuthentication.RegsiterUser.regsiterUser(RegsiterUser.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testWithAuthentication.CreateObjectWithCollection#createObject_Collection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testWithAuthentication.DeleteObjectWithCollection#deleteObject_Collection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testWithAuthentication.GetCollectionObjects#getObjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testWithAuthentication.GetCollections#getCollections</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testWithAuthentication.UpdateObjectWithCollection#updateObject_Collection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.CreateObject#createObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.CreateObject#createObject_WithoutName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.CreateObjectMultiple#createObject</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>requestData.CreateRequest@46472f68</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.CreateObjectMultiple#createObject</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>requestData.CreateRequest@4cff45e4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.DeleteObject#deleteObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.GetObjects#getObjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.GetObjectsById#getObjectsById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

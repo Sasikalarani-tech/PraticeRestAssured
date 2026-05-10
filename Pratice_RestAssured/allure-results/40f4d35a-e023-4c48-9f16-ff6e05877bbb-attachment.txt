@@ -1,0 +1,11 @@
+{
+    "id": "ff8081819d82fab6019e0c83df0c1a74",
+    "name": "Apple MacBook Pro 16",
+    "data": {
+        "year": "2019",
+        "price": "1840.99",
+        "hardDisk": "1.2TB",
+        "CPU model": "Intel Core",
+        "Hard disk size": "1.2TB"
+    }
+}
